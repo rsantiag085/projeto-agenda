@@ -53,7 +53,7 @@ def add_contato():
     try:
         data = request.json
         if not data or 'nome' not in data or 'telefone' not in data or 'email' not in data:
-        return jsonify({"error": "Dados 'nome' e 'telefone' são obrigatórios"}), 400
+            return jsonify({"error": "Dados 'nome' e 'telefone' são obrigatórios"}), 400
 
         novo_contato = Contato(
             nome=data['nome'],

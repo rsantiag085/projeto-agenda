@@ -7,4 +7,4 @@ spec:
     spec:
       containers:
         - name: agenda-api
-          image: docker.io/rsantiag085/agenda-api:latest
+          image: docker.io/rsantiag085/agenda-api

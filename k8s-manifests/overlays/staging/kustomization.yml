@@ -9,5 +9,5 @@ images:
     newTag: latest 
 
   - name: docker.io/rsantiag085/agenda-ui 
-    newName: docker.io/rsantiag0S5/agenda-ui 
+    newName: docker.io/rsantiag085/agenda-ui 
     newTag: latest 
