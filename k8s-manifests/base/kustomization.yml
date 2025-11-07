@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+###### Banco de Dados Postgres ######
+  - secret.yml
+  - postgres-pvc.yml
+  - postgres-deployment.yml
+  - postgres-service.yml
+
+###### ConfigMap da API ######
+  - configmap.yml
+  - backend-deployment.yml
+  - backend-service.yml
+
+###### Frontend ######
+  - frontend-deployment.yml
+  - frontend-service.yml

@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base
+namePrefix: staging-
+images:
+  - name: docker.io/rsantiag085/agenda-api
+    newName: docker.io/rsantiag085/agenda-api 
+    newTag: latest 
+
+  - name: docker.io/rsantiag085/agenda-ui 
+    newName: docker.io/rsantiag0S5/agenda-ui 
+    newTag: latest 
